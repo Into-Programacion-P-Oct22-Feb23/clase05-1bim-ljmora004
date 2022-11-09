@@ -30,7 +30,9 @@ public class Ejemplo2 {
         System.out.println("Ingrese nota de asignatura 1");
         notaAsignatura1 = entrada.nextDouble();
         System.out.println("Ingrese nombre de asignatura 2");
-        entrada.nextLine(); // limpieza de buffer
+        entrada.nextLine(); // limpieza de buffer para que Scanner no se sature
+                            // y se salte la entrada de texto (Esto pasa
+                            // cuando intercalamos tipos de variables) //
         nombreAsignatura2 = entrada.nextLine();
         System.out.println("Ingrese nota de asignatura 2");
         notaAsignatura2 = entrada.nextDouble();
